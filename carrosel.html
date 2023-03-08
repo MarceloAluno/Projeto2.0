@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="container-login">
+            <div class="wrap-login">
+                <form class="login-form">
+                    <span class="login-form-title">
+                        Faça o login
+                    </span>
+
+                    <div class="wrap-input margin-top-35 margin-bottom-35">
+                        <input class="input-form" type="text" name="email" autocomplete="off">
+                        <span class="focus-input-form" data-placeholder="E-mail"></span>
+                    </div>
+
+                    <div class="wrap-input margin-bottom-35">
+                        <input class="input-form" type="password" name="password">
+                        <span class="focus-input-form" data-placeholder="Senha"></span>
+                    </div>
+
+                    <div class="container-login-form-btn">
+                        <button class="login-form-btn">
+                            Login
+                        </button>
+                    </div>
+
+                    <ul class="login-utils">
+                        <li class="margin-bottom-8 margin-top-8">
+                            <span class="text1">
+                                Esqueceu sua
+                            </span>
+
+                            <a href="#" class="text2">
+                                senha?
+                            </a>
+                        </li>
+
+                        <li>
+                            <span class="text1">
+                                Não tem conta?
+                            </span>
+
+                            <a href="#" class="text2">
+                                Criar
+                            </a>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="https://www.w3schools.com/bootstrap/la.jpg" alt="Los Angeles">
+                    </div>
+
+                    <div class="item">
+                        <img src="https://www.w3schools.com/bootstrap/chicago.jpg" alt="Chicago">
+                    </div>
+
+                    <div class="item">
+                        <img src="https://www.w3schools.com/bootstrap/ny.jpg" alt="New York">
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let inputs = document.getElementsByClassName('input-form');
+        for (let input of inputs) {
+            input.addEventListener("blur", function () {
+                if (input.value.trim() != "") {
+                    input.classList.add("has-val");
+                } else {
+                    input.classList.remove("has-val");
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>
